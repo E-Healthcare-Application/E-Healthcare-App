@@ -12,6 +12,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
+
+import com.ehealthcare.dto.PatientDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
@@ -61,5 +63,10 @@ public class Patient extends User {
 		return "Patient [" + super.toString() + " bloodGroup=" + bloodGroup + "]";
 	}
 
-	
+	public static Patient createPatient(PatientDTO dto) {
+		return new Patient(dto.getUsername(), dto.getFirstName(), dto.getLastName(), dto.getEmail(), dto.getPassword(),
+				dto.getDob(), dto.getGender(), dto.getMobileNumber(), dto.getBloodGroup(), dto.getArea(), dto.getCity(),
+				dto.getState());
+	}
+
 }
