@@ -1,8 +1,8 @@
-package com.app.service.intf;
-
-import com.app.entity.modal.Admin;
+     package com.ehealthcare.service.intf;
 
 import java.util.List;
+
+import com.ehealthcare.entities.Admin;
 
 public interface AdminServiceIntf {
 

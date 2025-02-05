@@ -3,7 +3,6 @@ package com.ehealthcare.entities;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,6 +13,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
+import com.ehealthcare.dto.DoctorDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -119,6 +119,13 @@ public class Doctor extends User {
 		return "Doctor [languages=" + languages + ", specialization=" + specialization + ", qualification="
 				+ qualification  + ", fees=" + fees + "]";
 	}
-
 	
+
+	public static Doctor createDoctor(DoctorDTO dto) {
+		return new Doctor(dto.getLanguages(), dto.getSpecialization(), dto.getQualification(),
+				dto.getUsername(), dto.getFirstName(), dto.getLastName(), dto.getEmail(), dto.getPassword(),
+				dto.getDob(), dto.getGender(), dto.getMobileNumber(), dto.getArea(), dto.getCity(), dto.getState(),
+				dto.getFees());
+	}
+
 }

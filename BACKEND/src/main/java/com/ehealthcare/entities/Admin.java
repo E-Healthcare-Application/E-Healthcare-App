@@ -56,5 +56,6 @@ public class Admin extends BaseEntity {
 	public String toString() {
 		return "Admin [name=" + name + ", email=" + email + ", password=" + password + "]";
 	}
+	
 
 }

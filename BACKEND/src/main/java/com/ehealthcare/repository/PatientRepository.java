@@ -6,12 +6,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import com.ehealthcare.entities.Admin;
+import com.ehealthcare.entities.Patient;
 
 @Repository
-public interface AdminRepository extends JpaRepository<Admin, Long> {
-
-	Optional<Admin> findByEmailAndPassword(String email, String password);
-
-	Optional<Admin> findByEmail(String email);
-		
+public interface PatientRepository extends JpaRepository<Patient, Long> 
+{
+	Optional<Patient> findByEmail(String email);
 }
+		
+	
