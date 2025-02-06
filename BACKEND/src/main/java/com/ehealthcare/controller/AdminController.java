@@ -50,4 +50,14 @@ public class AdminController {
 		}
 		return new ResponseEntity<>(d, HttpStatus.CREATED);
 	}
+	
+	@GetMapping("/getAllDoctors")
+	public List<Doctor> getAllDoctorDetails() {
+		return doctorService.getAllDoctors();
+	}
+
+	@DeleteMapping("/removeDoctor/{doctorId}")
+	public String deleteDoctor(@PathVariable Long doctorId) {
+		return doctorService.deleteDoctorById(doctorId);
+	}
 }
