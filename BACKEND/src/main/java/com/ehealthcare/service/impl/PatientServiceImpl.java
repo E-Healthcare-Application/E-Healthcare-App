@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-
+import com.ehealthcare.custome_exception.UserHandlingException;
 import com.ehealthcare.dto.PatientDTO;
 import com.ehealthcare.entities.Admin;
 import com.ehealthcare.entities.Doctor;
@@ -14,6 +14,8 @@ import com.ehealthcare.repository.AppointmentRepository;
 import com.ehealthcare.repository.DoctorRepository;
 import com.ehealthcare.repository.PatientRepository;
 import com.ehealthcare.service.intf.PatientServiceIntf;
+
+import antlr.collections.List;
 
 @Service
 @Transactional
@@ -66,4 +68,20 @@ public class PatientServiceImpl implements PatientServiceIntf {
 		newPatient.setPassword(passwordEncoder.encode(newPatient.getPassword()));
 		return patientRepo.save(newPatient);
 	}
+
+
+
+	@Override
+	public java.util.List<Patient> getAllPatients() {
+		// TODO Auto-generated method stub
+		return patientRepo.findAll();
+	}
+
+	@Override
+	public Patient getPatientDetails(Long id) {
+		// TODO Auto-generated method stub
+		return patientRepo.findById(id).orElseThrow(() -> new UserHandlingException("Invalid patient ID..."));
+	}
+	
+
 }

@@ -10,7 +10,13 @@ public interface PatientServiceIntf {
 	//register new patient
 	Patient savePatient(PatientDTO user);
 	
+
 	
+	//getAll patients
+	List<Patient> getAllPatients();
+
+	//get specific patient
+	Patient getPatientDetails(Long id);
 	
 	
 }
