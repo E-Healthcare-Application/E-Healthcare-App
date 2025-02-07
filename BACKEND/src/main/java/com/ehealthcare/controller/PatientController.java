@@ -40,4 +40,10 @@ public class PatientController {
 	public ResponseEntity<?> getPatientDetails(@PathVariable Long patientId) {
 		return ResponseEntity.ok(patientService.getPatientDetails(patientId));
 	}
+	
+	@PutMapping("/updatePatientDetails/{patientId}")
+	public ResponseEntity<?> updatePatientDetails(@RequestBody PatientDTO detachedPatient,
+			@PathVariable Long patientId) {
+		return ResponseEntity.ok(patientService.updatePatientDetails(detachedPatient, patientId));
+	}
 }

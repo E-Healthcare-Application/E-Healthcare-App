@@ -1,5 +1,12 @@
 package com.ehealthcare.service.impl;
+
+import static com.ehealthcare.util.UtilityClass.getNullPropertyNames;
+
+import java.util.List;
+
 import javax.transaction.Transactional;
+
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -14,8 +21,6 @@ import com.ehealthcare.repository.AppointmentRepository;
 import com.ehealthcare.repository.DoctorRepository;
 import com.ehealthcare.repository.PatientRepository;
 import com.ehealthcare.service.intf.PatientServiceIntf;
-
-import antlr.collections.List;
 
 @Service
 @Transactional
@@ -69,19 +74,28 @@ public class PatientServiceImpl implements PatientServiceIntf {
 		return patientRepo.save(newPatient);
 	}
 
-
+	
 
 	@Override
-	public java.util.List<Patient> getAllPatients() {
-		// TODO Auto-generated method stub
+	public List<Patient> getAllPatients() {
 		return patientRepo.findAll();
 	}
 
 	@Override
 	public Patient getPatientDetails(Long id) {
-		// TODO Auto-generated method stub
 		return patientRepo.findById(id).orElseThrow(() -> new UserHandlingException("Invalid patient ID..."));
 	}
-	
+
+	@Override
+	public Patient updatePatientDetails(PatientDTO detachedPatient, long id) {
+		Patient p = patientRepo.findById(id).orElseThrow(() -> new UserHandlingException("Invalid Patient id!!!!"));
+		Patient patient = Patient.createPatient(detachedPatient);
+		patient.setId(id);
+		patient.setPassword(p.getPassword());
+		BeanUtils.copyProperties(id, patient, getNullPropertyNames(patient));
+
+		return patientRepo.save(patient);
+
+	}
 
 }
