@@ -19,7 +19,7 @@ public interface DoctorServiceIntf {
 	List<Doctor> getAllDoctorsBySpecializationAndCity(String specialization, String city);
 
 	// cancel appointment [implemented in appointment services]
-	// String cancelAppointment(Long doctorId, Long appointmentId);
+	//String cancelAppointment(Long doctorId, Long appointmentId);
 
 	 //get list of all doctors
 	List<Doctor> getAllDoctors();
@@ -28,10 +28,10 @@ public interface DoctorServiceIntf {
 	String deleteDoctorById(Long doctorId);
 
 	// Make available slots table for doctor from start date to end date
-	//List<LocalDateTime> createAvailableSlotsDetails(Long doctorId, DoctorTimeTable doctorTimeTable);
+	List<LocalDateTime> createAvailableSlotsDetails(Long doctorId, DoctorTimeTable doctorTimeTable);
 
 	// make slots available if we delete any patient
-	//void makeSlotsAvailable(Long appoitmentId);
+	void makeSlotsAvailable(Long appoitmentId);
 
 	 Doctor updateDoctorDetails(DoctorDTO detachedDoctor, Long id);
 

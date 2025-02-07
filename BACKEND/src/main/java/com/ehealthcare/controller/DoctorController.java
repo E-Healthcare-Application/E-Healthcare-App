@@ -27,7 +27,11 @@ public class DoctorController {
 	@Autowired
 	private DoctorServiceIntf doctorService;
 	
-	
+	@PostMapping("/createAppointmentSlot/{doctorId}")
+	public List<LocalDateTime> createAppointmentSlots(@PathVariable Long doctorId,
+			@RequestBody DoctorTimeTable doctorTimeTable) {
+		return doctorService.createAvailableSlotsDetails(doctorId, doctorTimeTable);
+	}
 
 	@GetMapping("/getDoctorDetails/{doctorId}")
 	public ResponseEntity<?> getDoctorDetails(@PathVariable Long doctorId) {
