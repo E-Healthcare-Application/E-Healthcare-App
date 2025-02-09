@@ -35,6 +35,7 @@ public class AppointmentController {
 
 	}
 	
+	//booking an  appointment 
 	@GetMapping("/bookAppointment/{doctorId}/{patientId}/{time}")
 	public List<LocalDateTime> bookAppointmentForPatient(@PathVariable Long doctorId, @PathVariable Long patientId,
 			@PathVariable String time) {
@@ -42,11 +43,23 @@ public class AppointmentController {
 		return appointmentService.bookAppointmentForPatient(doctorId, patientId, time);
 	}
 
-	
+	//get doctor by appointment id
 	@GetMapping("/doctor/{appointmentId}")
 	public ResponseEntity<?> getDoctorByAppointmentId(@PathVariable Long appointmentId) {
 		System.out.println("In ctrler...");
 		return ResponseEntity.ok(appointmentService.getDoctorByAppointmentId(appointmentId));
+	}
+	
+	//get patient by appointment id
+	@GetMapping("/patient/{appointmentId}")
+	public ResponseEntity<?> getPatientByAppointmentId(@PathVariable Long appointmentId) {
+		return ResponseEntity.ok(appointmentService.getPatientByAppointmentId(appointmentId));
+	}
+	
+	//get doctors by specialized city
+	@GetMapping("/specialization/{city}")
+	public ResponseEntity<?> getSpecializationByCity(@PathVariable String city) {
+		return ResponseEntity.ok(doctorService.getSpecializationsByCity(city));
 	}
 	
 }
