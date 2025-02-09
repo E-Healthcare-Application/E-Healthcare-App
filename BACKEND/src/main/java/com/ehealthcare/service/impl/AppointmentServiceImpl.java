@@ -116,15 +116,60 @@ public class AppointmentServiceImpl implements AppointmentServiceIntf {
 		Patient patient = appointment.getPatient();
 		return patient;
 	}
-	
-	
 
 
+// cancel appointment
+	@Override
+	public String cancelAppointment(Long appointmentId) {
 
-	
+		Appointment appointment = appointmentRepo.findById(appointmentId)
+				.orElseThrow(() -> new UserHandlingException("appointment Id not found"));
+		Doctor doctor = appointment.getDoctor();
+		LocalDateTime appointmentTime = appointment.getAppointmentTime();
+		doctor.getTimeSlot().bookAvailableSlot(appointmentTime);
+		appointmentRepo.deleteById(appointmentId);
+		return "Appointment cancelled successfully(for " + appointmentId + ")...!!!";
+	}
 
 
+	//get all patient current appointments
+	@Override
+	public List<Appointment> getAllPatientCurrentAppoitments(Long patientId) {
+		return appointmentRepo.findByPatientAndAppointmentTimeAfter(patientService.getPatientDetails(patientId),
+				LocalDateTime.now());
+	}
 
 
+// get all patient appointments
+	@Override
+	public List<Appointment> getAllPatientAppoitmentsHistory(Long patientId) {
+		return appointmentRepo.findByPatientAndAppointmentTimeBeforeOrderByAppointmentTimeDesc(
+				patientService.getPatientDetails(patientId), LocalDateTime.now());
+	}
+
+
+//   get all current appointments for dr
+	@Override
+	public List<Appointment> getAllCurrentAppoitmentsForDoctor(Long doctorId) {
+		return appointmentRepo.findByDoctorAndAppointmentTimeAfter(doctorService.getDoctorDetails(doctorId),
+				LocalDateTime.now());
+	}
+
+
+// get patient appointments history for dr
+	@Override
+	public List<Appointment> getPatientAppoitmentsHistoryForDoctor(Long doctorId, Long patientId) {
+		return appointmentRepo.findByDoctorAndPatientAndAppointmentTimeBeforeOrderByAppointmentTimeDesc(
+				doctorService.getDoctorDetails(doctorId), patientService.getPatientDetails(patientId),
+				LocalDateTime.now());
+	}
+
+
+//  get all appointments history for dr
+	@Override
+	public List<Appointment> getAllAppoitmentsHistoryForDoctor(Long doctorId) {
+		return appointmentRepo.findByDoctorAndAppointmentTimeBeforeOrderByAppointmentTimeDesc(
+				doctorService.getDoctorDetails(doctorId), LocalDateTime.now());
+	}
 
 }
