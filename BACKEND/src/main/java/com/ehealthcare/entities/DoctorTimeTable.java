@@ -121,5 +121,18 @@ public class DoctorTimeTable extends BaseEntity {
 	}
 
 	
+	//helper method to book available slots
+	public List<LocalDateTime> bookAvailableSlot(LocalDateTime time) {
+		Boolean value = availableSlots.get(time);
+		availableSlots.put(time, !value);
+		List<LocalDateTime> list = new ArrayList<>();
+		for (Map.Entry<LocalDateTime, Boolean> entry : availableSlots.entrySet()) {
+			if (entry.getValue() == true) { // send only list whose boolean value is true (not booked slots)
+				list.add(entry.getKey());
+			}
+		}
+		return list;
 	
+	
+}
 }
