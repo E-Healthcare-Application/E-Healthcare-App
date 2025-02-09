@@ -37,8 +37,8 @@ public interface AppointmentServiceIntf {
 	// book an appointment
 	List<LocalDateTime> bookAppointmentForPatient(Long doctorId, Long patientId, String time);
 
-	// get patient by appointment id
-	//Patient getPatientByAppointmentId(Long appointmentId);
+//	 get patient by appointment id
+	Patient getPatientByAppointmentId(Long appointmentId);
 
 	Doctor getDoctorByAppointmentId(Long appointmentId);
 

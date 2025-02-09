@@ -53,7 +53,7 @@ public class AppointmentServiceImpl implements AppointmentServiceIntf {
 
 
 	
-	
+	//get all appointments
 	@Override
 	public List<LocalDateTime> getAllAppointmentSlots(Long doctorId) {
 
@@ -75,7 +75,7 @@ public class AppointmentServiceImpl implements AppointmentServiceIntf {
 		return list;
 	}
 
-
+	//book an appointment for patients
 	@Override
 	public List<LocalDateTime> bookAppointmentForPatient(Long doctorId, Long patientId, String stime) {
 
@@ -98,7 +98,7 @@ public class AppointmentServiceImpl implements AppointmentServiceIntf {
 		return availableSlotList;
 	}
 
-	
+	//get dr by appointment id
 	@Override
 	public Doctor getDoctorByAppointmentId(Long appointmentId) {
 
@@ -107,6 +107,17 @@ public class AppointmentServiceImpl implements AppointmentServiceIntf {
 		return appointment.getDoctor();
 
 	}
+	
+	//get patient by appointment id
+	@Override
+	public Patient getPatientByAppointmentId(Long appointmentId) {
+
+		Appointment appointment = appointmentRepo.findById(appointmentId).get();
+		Patient patient = appointment.getPatient();
+		return patient;
+	}
+	
+	
 
 
 
