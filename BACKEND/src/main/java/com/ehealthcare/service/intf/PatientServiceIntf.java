@@ -13,6 +13,9 @@ public interface PatientServiceIntf {
 	
 	//getAll patients
 	List<Patient> getAllPatients();
+	
+	//delete patient
+		String deletePatientById(Long patient_id);
 
 	//get specific patient
 	Patient getPatientDetails(Long id);

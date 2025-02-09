@@ -60,4 +60,13 @@ public class AdminController {
 	public String deleteDoctor(@PathVariable Long doctorId) {
 		return doctorService.deleteDoctorById(doctorId);
 	}
+	@GetMapping("/getAllPatients")
+	public List<Patient> getAllPatientDetails() {
+		return patientService.getAllPatients();
+	}
+
+	@DeleteMapping("/removePatient/{patientId}")
+	public String deletePatient(@PathVariable Long patientId) {
+		return patientService.deletePatientById(patientId);
+	}
 }

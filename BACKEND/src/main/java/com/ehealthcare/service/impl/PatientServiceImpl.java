@@ -97,5 +97,19 @@ public class PatientServiceImpl implements PatientServiceIntf {
 		return patientRepo.save(patient);
 
 	}
+	
+	@Override
+	public String deletePatientById(Long patient_id) {
+		List<Long> appoitments = appointmentRepo.getAppointmentIdListForPatient(patient_id);
+		appoitments.forEach(System.out::println);
+		Long appointmentId = null;
+		for (int i = 0; i < appoitments.size(); i++) {
+			appointmentId = appoitments.get(0);
+			doctorService.makeSlotsAvailable(appointmentId);
+		}
+
+		patientRepo.deleteById(patient_id);
+		return "Successfully Deleted Patient with id : " + patient_id;
+	}
 
 }
