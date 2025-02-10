@@ -21,7 +21,7 @@ const AdminDashboard = () => {
 
   const logout = () => {
     AdminServiceMethods.logoutAdmin();
-    navigate("/"); // Redirect to login page after logout
+    navigate("/"); 
   };
 
   return (
