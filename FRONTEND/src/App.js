@@ -8,6 +8,7 @@ import PatientDashboard from './components/PatientDashboard';
 import UpdatePatientProfile from './components/UpdatePatientProfile';
 import CreateAppointmentSlots from './components/CreateAppointmentSlots';
 import AppointmentHistory from './components/AppointmentHistory';
+import BookSlotForPatient from './components/BookSlotForPatient';
 
 
 
@@ -42,6 +43,8 @@ function App() {
 
         <Route path="/update-doctor-profile" element={<UpdateDoctorProfile />} />
         <Route path="/update-profile" element={<UpdatePatientProfile />} />
+        <Route path="/book-slot-for-patient" element={<BookSlotForPatient />} />
+
         
 
           {/* Redirect to home page if no match */}
