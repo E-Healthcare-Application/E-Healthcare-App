@@ -14,7 +14,7 @@ const Home = () => {
         <section className="hero-section">
           <Container>
             <Row>
-              <Col md={6} className="hero-text">
+              <Col md={5} className="hero-text">
                 <h1>Welcome to E-Healthcare Application</h1>
                 <p>
                   This platform allows booking medical consultations with specialist doctors online.
@@ -27,14 +27,15 @@ const Home = () => {
                 <Link className="btn btn-success btn-lg text-uppercase mx-3" to="/patient-sign-up">
                   User Sign Up
                 </Link>
-
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <Link className="btn btn-info btn-lg text-uppercase text-dark mx-3" to="/userLogin">
                   Login
                 </Link>
 
-                <Link className="btn btn-success btn-lg text-uppercase mx-3" to="/SignUp-new-doctor">
+                {/* <Link className="btn btn-success btn-lg text-uppercase mx-3" to="/SignUp-new-doctor">
                   Doctor Sign Up
-                </Link>
+                </Link> */}
               </div>
             </Row>
           </Container>

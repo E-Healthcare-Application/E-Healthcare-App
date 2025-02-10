@@ -50,8 +50,6 @@ public class AppointmentServiceImpl implements AppointmentServiceIntf {
 		this.doctorService = doctorService;
 
 	}
-
-
 	
 	//get all appointments
 	@Override

@@ -11,6 +11,8 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
+import Services from './components/Services';
+import HorizontalCard from './components/HorizontalCard';
 
 
 
@@ -33,7 +35,14 @@ function App() {
         <Route path="/update-doctor-profile" element={<UpdateDoctorProfile />} />
         <Route path="/update-profile" element={<UpdatePatientProfile />} />
         
+
+          {/* Redirect to home page if no match */}
+          <Route path="*" element={<Home />} />
+          
          </Routes>
+         <HorizontalCard />
+        <Services />
+        <Footer />
 
       </div>
    
