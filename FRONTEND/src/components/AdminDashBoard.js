@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import AdminServiceMethods from "../service/AdminServiceMethods";
 
+
 const AdminDashboard = () => {
   const navigate = useNavigate();
   const [adminId, setAdminId] = useState("");

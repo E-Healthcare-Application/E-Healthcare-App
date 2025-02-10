@@ -3,6 +3,10 @@ import LandingPage from './components/LandingPage';
 import PatientSignUp from './components/PatientSignUp';
 import UserLogin from './components/UserLogin';
 import PatientDashboard from './components/PatientDashboard';
+import UpdateDoctorProfile from './components/UpdateDoctorProfile';
+import PatientDashboard from './components/PatientDashboard';
+import UpdatePatientProfile from './components/UpdatePatientProfile';
+import CreateAppointmentSlots from './components/CreateAppointmentSlots';
 
 
 
