@@ -3,6 +3,13 @@ import LandingPage from './components/LandingPage';
 import PatientSignUp from './components/PatientSignUp';
 import UserLogin from './components/UserLogin';
 import PatientDashboard from './components/PatientDashboard';
+import UpdateDoctorProfile from './components/UpdateDoctorProfile';
+import PatientDashboard from './components/PatientDashboard';
+import UpdatePatientProfile from './components/UpdatePatientProfile';
+import CreateAppointmentSlots from './components/CreateAppointmentSlots';
+import AppointmentHistory from './components/AppointmentHistory';
+import BookSlotForPatient from './components/BookSlotForPatient';
+
 
 
 
@@ -11,6 +18,8 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
+import Services from './components/Services';
+import HorizontalCard from './components/HorizontalCard';
 
 
 
@@ -25,8 +34,26 @@ function App() {
           
         <Route path="/patient-sign-up" element={<PatientSignUp />} />
         <Route path="/userLogin" element={<UserLogin />} />
-        <Route path="/patientDashboard" element={<PatientDashboard />} />
-        </Routes>
+        <Route path="/patientDashboard" element={<PatientDashboard />} />  
+        <Route path="/email-for-forgot-password" element={<EmailForForgotPassword />} />
+        <Route path="/enter-token" element={<EnterToken />} />
+        <Route path="/reset-password" element={<ResetPassword />} /> 
+        <Route path="/create-appointment-slots" element={<CreateAppointmentSlots />} />
+        <Route path="/app-history" element={<AppointmentHistory />} />
+
+        <Route path="/update-doctor-profile" element={<UpdateDoctorProfile />} />
+        <Route path="/update-profile" element={<UpdatePatientProfile />} />
+        <Route path="/book-slot-for-patient" element={<BookSlotForPatient />} />
+
+        
+
+          {/* Redirect to home page if no match */}
+          <Route path="*" element={<Home />} />
+          
+         </Routes>
+         <HorizontalCard />
+        <Services />
+        <Footer />
 
       </div>
    
