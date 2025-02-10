@@ -25,8 +25,15 @@ function App() {
           
         <Route path="/patient-sign-up" element={<PatientSignUp />} />
         <Route path="/userLogin" element={<UserLogin />} />
-        <Route path="/patientDashboard" element={<PatientDashboard />} />
-        </Routes>
+        <Route path="/patientDashboard" element={<PatientDashboard />} />  
+        <Route path="/email-for-forgot-password" element={<EmailForForgotPassword />} />
+        <Route path="/enter-token" element={<EnterToken />} />
+        <Route path="/reset-password" element={<ResetPassword />} /> 
+        <Route path="/create-appointment-slots" element={<CreateAppointmentSlots />} />
+        <Route path="/update-doctor-profile" element={<UpdateDoctorProfile />} />
+        <Route path="/update-profile" element={<UpdatePatientProfile />} />
+        
+         </Routes>
 
       </div>
    
