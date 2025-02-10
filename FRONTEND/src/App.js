@@ -25,8 +25,9 @@ function App() {
           
         <Route path="/patient-sign-up" element={<PatientSignUp />} />
         <Route path="/userLogin" element={<UserLogin />} />
-        <Route path="/patientDashboard" element={<PatientDashboard />} />
-        </Routes>
+        <Route path="/patientDashboard" element={<PatientDashboard />} />   
+        
+         </Routes>
 
       </div>
    

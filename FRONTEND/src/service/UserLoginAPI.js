@@ -2,20 +2,20 @@ import axios from 'axios';
 
 const USER_LOGIN_BASE_URL = 'http://localhost:8080/home';
 
-class UserLoginAPI {
+const userLogin = (user) => {
+  return axios.post(`${USER_LOGIN_BASE_URL}/userLogin`, user);
+};
 
-    userLogin(user) {
-        return axios.post(USER_LOGIN_BASE_URL + '/userLogin', user);
-    }
+const generateToken = (userEmail) => {
+  return axios.get(`${USER_LOGIN_BASE_URL}/generateToken/${userEmail}`);
+};
 
-    generateToken(userEmail){
-        return axios.get(USER_LOGIN_BASE_URL + '/generateToken/' + userEmail);
-    }
+const resetPassword = (userEmail, userNewPassword) => {
+  return axios.post(`${USER_LOGIN_BASE_URL}/resetPassword/${userEmail}/${userNewPassword}`);
+};
 
-    resetPassword(userEmail,userNewPassword){
-        return axios.post(USER_LOGIN_BASE_URL + '/resetPassword/' + userEmail + '/' + userNewPassword);
-    }
-
-}
-
-export default new UserLoginAPI();
+export default {
+  userLogin,
+  generateToken,
+  resetPassword,
+};
