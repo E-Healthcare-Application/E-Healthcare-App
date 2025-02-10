@@ -8,6 +8,10 @@ const addPatient = (patient) => {
 };
 
 
+// Function to fetch a patient by ID
+const getPatientById = (patientId) => {
+  return axios.get(`${PATIENT_API_BASE_URL}/getPatientDetails/${patientId}`);
+};
 
 // Function to update patient details
 const updatePatientDetails = (id, patient) => {
@@ -20,9 +24,10 @@ const logoutPatient = () => {
   sessionStorage.removeItem("patient");
 };
 
+
+
 export default {
   addPatient,
-  getPatientById,
   updatePatientDetails,
   logoutPatient,
 };

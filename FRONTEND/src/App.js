@@ -10,6 +10,7 @@ import CreateAppointmentSlots from './components/CreateAppointmentSlots';
 import AppointmentHistory from './components/AppointmentHistory';
 import BookSlotForPatient from './components/BookSlotForPatient';
 import DoctorDashboard from './components/DoctorDashboard';
+import PatientList from './components/PatientList';
 
 
 
@@ -47,6 +48,7 @@ function App() {
         <Route path="/update-doctor-profile" element={<UpdateDoctorProfile />} />
         <Route path="/update-profile" element={<UpdatePatientProfile />} />
         <Route path="/book-slot-for-patient" element={<BookSlotForPatient />} />
+        <Route path="/patientList" element={<PatientList />} />
 
         
 
