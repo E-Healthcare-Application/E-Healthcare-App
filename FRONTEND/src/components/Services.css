@@ -1,0 +1,33 @@
+.vertical {
+    border-left: 2px solid rgb(0, 0, 0);
+    height: 100px;
+    margin-top: 4%;
+    left: 50%;
+    
+  }
+  .image-card {
+    margin-top: 10px;
+      display: flex;
+      justify-content:space-around;
+      background-color:rgb(166, 217, 164);
+    }
+    
+    .image-container {
+      text-align: center;
+    }
+    
+    .image-container img {
+      margin-top: 20px;
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+     
+    }
+    
+    .image-container p {
+      color:black;
+      margin-top: 5px;
+      font-style: italic;
+    
+    }
+    
