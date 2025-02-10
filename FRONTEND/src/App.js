@@ -7,6 +7,8 @@ import UpdateDoctorProfile from './components/UpdateDoctorProfile';
 import PatientDashboard from './components/PatientDashboard';
 import UpdatePatientProfile from './components/UpdatePatientProfile';
 import CreateAppointmentSlots from './components/CreateAppointmentSlots';
+import AppointmentHistory from './components/AppointmentHistory';
+
 
 
 
@@ -36,6 +38,8 @@ function App() {
         <Route path="/enter-token" element={<EnterToken />} />
         <Route path="/reset-password" element={<ResetPassword />} /> 
         <Route path="/create-appointment-slots" element={<CreateAppointmentSlots />} />
+        <Route path="/app-history" element={<AppointmentHistory />} />
+
         <Route path="/update-doctor-profile" element={<UpdateDoctorProfile />} />
         <Route path="/update-profile" element={<UpdatePatientProfile />} />
         
