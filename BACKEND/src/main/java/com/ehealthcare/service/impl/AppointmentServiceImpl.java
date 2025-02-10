@@ -116,15 +116,5 @@ public class AppointmentServiceImpl implements AppointmentServiceIntf {
 		Patient patient = appointment.getPatient();
 		return patient;
 	}
-	
-	
-
-
-
-	
-
-
-
-
 
 }

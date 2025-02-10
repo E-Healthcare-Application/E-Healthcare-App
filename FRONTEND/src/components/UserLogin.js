@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 import UserLoginAPI from '../service/UserLoginAPI';
 
 const UserLogin = () => {
-    const navigate = useNavigate(); // ✅ For programmatic navigation
+    const navigate = useNavigate(); 
 
     const login = async (values) => {
         if (values.password === '') {
