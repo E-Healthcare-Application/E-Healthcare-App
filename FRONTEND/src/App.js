@@ -11,6 +11,17 @@ import AppointmentHistory from './components/AppointmentHistory';
 import BookSlotForPatient from './components/BookSlotForPatient';
 import DoctorDashboard from './components/DoctorDashboard';
 import PatientList from './components/PatientList';
+import ShowCurrentAppointment from './components/ShowCurrentAppointment';
+import EmailForForgotPassword from './components/EmailForForgotPassword';
+import EnterToken from './components/EnterToken';
+import ResetPassword from './components/ResetPassword';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './components/Home';
+import UpdateDoctorProfile from './components/UpdateDoctorProfile';
+import BookSlotForPatient from './components/BookSlotForPatient';
+import PatientList from './components/PatientList';
+import ShowCurrentAppointment from './components/ShowCurrentAppointment';
 
 
 
@@ -38,6 +49,8 @@ function App() {
         <Route path="/userLogin" element={<UserLogin />} />
         <Route path="/patientDashboard" element={<PatientDashboard />} /> 
         <Route path="/doctorDashboard" element={<DoctorDashboard />} />
+        <Route path="/current-app" element={<ShowCurrentAppointment />} />
+        <Route path="/app-history" element={<AppointmentHistory />} />
  
         <Route path="/email-for-forgot-password" element={<EmailForForgotPassword />} />
         <Route path="/enter-token" element={<EnterToken />} />
