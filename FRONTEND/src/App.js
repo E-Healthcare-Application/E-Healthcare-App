@@ -22,7 +22,7 @@ import UpdateDoctorProfile from './components/UpdateDoctorProfile';
 import BookSlotForPatient from './components/BookSlotForPatient';
 import PatientList from './components/PatientList';
 import ShowCurrentAppointment from './components/ShowCurrentAppointment';
-
+import DoctorListForAdmin from './components/DoctorListForAdmin';
 
 
 
@@ -43,21 +43,19 @@ function App() {
 
         <Header title="E-Healthcare" />
        
-        <Routes>
-          
+        <Routes>   
         <Route path="/patient-sign-up" element={<PatientSignUp />} />
         <Route path="/userLogin" element={<UserLogin />} />
         <Route path="/patientDashboard" element={<PatientDashboard />} /> 
         <Route path="/doctorDashboard" element={<DoctorDashboard />} />
         <Route path="/current-app" element={<ShowCurrentAppointment />} />
         <Route path="/app-history" element={<AppointmentHistory />} />
- 
         <Route path="/email-for-forgot-password" element={<EmailForForgotPassword />} />
         <Route path="/enter-token" element={<EnterToken />} />
         <Route path="/reset-password" element={<ResetPassword />} /> 
         <Route path="/create-appointment-slots" element={<CreateAppointmentSlots />} />
         <Route path="/app-history" element={<AppointmentHistory />} />
-
+        <Route path="/doctor-list-admin" element={<DoctorListForAdmin />} />
         <Route path="/update-doctor-profile" element={<UpdateDoctorProfile />} />
         <Route path="/update-profile" element={<UpdatePatientProfile />} />
         <Route path="/book-slot-for-patient" element={<BookSlotForPatient />} />
