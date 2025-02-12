@@ -30,4 +30,5 @@ export default {
   addPatient,
   updatePatientDetails,
   logoutPatient,
+  getPatientById
 };
