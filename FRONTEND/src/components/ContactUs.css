@@ -1,0 +1,26 @@
+.contact-us {
+    background-image: url('https://img.freepik.com/free-vector/human-blood-donate-white-background_1308-111266.jpg?size=626&ext=jpg&ga=GA1.1.2138836995.1688756964&semt=ais');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .contact-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+  }
+  
+  .contact-text {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .contact-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .features-section {
+    background-color: #ffffff;
+    padding: 50px 0;
+  }  
