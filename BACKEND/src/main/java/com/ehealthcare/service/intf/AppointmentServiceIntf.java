@@ -30,8 +30,8 @@ public interface AppointmentServiceIntf {
 	// get list of all appointment history for doctor
 	List<Appointment> getAllAppoitmentsHistoryForDoctor(Long doctorId);
 
-	// generate time table for doctor [doctor's time table pojo]
-//	DoctorTimeTable generateTimeTableForDoctor(DoctorTimeTable timeTable, Long doctor_id);
+	//generate time table for doctor [doctor's time table pojo]
+	//DoctorTimeTable generateTimeTableForDoctor(DoctorTimeTable timeTable, Long doctor_id);
 
 	// book an appointment
 	List<LocalDateTime> bookAppointmentForPatient(Long doctorId, Long patientId, String time);

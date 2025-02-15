@@ -1,8 +1,6 @@
 package com.ehealthcare.controller;
-
 import java.time.LocalDateTime;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -90,15 +88,20 @@ public class AppointmentController {
 		return appointmentService.getPatientAppoitmentsHistoryForDoctor(doctorId, patientId);
 	}
 
+	
+	
 	@GetMapping("/appointementHistoryD/{doctorId}")
 	public List<Appointment> getAllAppoinmentsHistoryForDoctor(@PathVariable Long doctorId) {
 		return appointmentService.getAllAppoitmentsHistoryForDoctor(doctorId);
 	}
+	
+	
 
 	@GetMapping("/getAppointmentSlots/{doctorId}")
 	public List<LocalDateTime> getAllAppointmentSlots(@PathVariable Long doctorId) {
 		return appointmentService.getAllAppointmentSlots(doctorId);
 	}
+	
 
 	@DeleteMapping("/cancelAppointment/{appointmentId}")
 	public void cancelAppointment(@PathVariable Long appointmentId) {

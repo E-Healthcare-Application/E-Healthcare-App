@@ -24,6 +24,15 @@ const PatientDashboard = () => {
         }
     };
 
+    const updatePatient = () => {
+        navigate('/update-profile');
+    };
+
+    const logoutPatient = () => {
+        PatientServiceMethods.logoutPatient();
+        navigate('/');
+    };
+
    
 
     return (
