@@ -37,17 +37,21 @@ const CreateAppointmentSlots = () => {
 
         let { startDate, endDate, startTime, endTime } = formData;
 
-        let currentDate = new Date();
+        let currentDate = new Date(); // Current date and time
+        let today = new Date(currentDate.setHours(0, 0, 0, 0)); // Reset to today’s date without time
+
         let startDateTime = new Date(startDate);
         let endDateTime = new Date(endDate);
 
         let startHour = parseInt(startTime.split(':')[0]);
         let endHour = parseInt(endTime.split(':')[0]);
 
-        if (startDateTime < currentDate || endDateTime < startDateTime) {
+        //  Allow today’s date and future dates, reject past dates
+        if (startDateTime < today || endDateTime < startDateTime) {
             alert('Invalid Date Selection');
             return;
         }
+
         if (startHour > endHour) {
             alert('Invalid Time Selection');
             return;

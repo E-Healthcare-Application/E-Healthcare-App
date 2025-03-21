@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form, Button, Card, Container, Row, Col } from 'react-bootstrap';
 import { Formik, ErrorMessage } from 'formik';
@@ -7,53 +7,46 @@ import Swal from 'sweetalert2';
 import UserLoginAPI from '../service/UserLoginAPI';
 
 const UserLogin = () => {
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
 
+    // ✅ Check Token Validity on Load
+    useEffect(() => {
+        const checkTokenValidity = async () => {
+            const isValid = await UserLoginAPI.validateToken();
+            if (isValid) {
+                console.log("✅ Token is valid. Redirecting...");
+                navigate('/dashboard'); // Redirect if already logged in
+            } else {
+                console.log("❌ Invalid token. Staying on login page.");
+                sessionStorage.removeItem("jwtToken");
+            }
+        };
+
+        checkTokenValidity();
+    }, [navigate]);
+
+    // ✅ Login Function
     const login = async (values) => {
-        if (values.password === '') {
-            Swal.fire({
-                icon: 'error',
-                title: 'Password Error',
-                text: 'Password cannot be empty',
-            });
-            return;
-        }
-
         try {
             const response = await UserLoginAPI.userLogin(values);
-            const userType = response.data.userType;
+            const { userType, token } = response;
 
-            sessionStorage.setItem(userType, JSON.stringify(response.data));
+            if (token) {
+                sessionStorage.setItem("jwtToken", token);
+                sessionStorage.setItem("userType", userType);
 
-            let redirectPath = '';
-            switch (userType) {
-                case 'patient':
-                    redirectPath = '/patientDashboard';
-                    break;
-                case 'doctor':
-                    redirectPath = '/doctorDashboard';
-                    break;
-                default:
-                    redirectPath = '/adminDashboard';
-                    break;
+                let redirectPath = userType === 'patient' ? '/patientDashboard' 
+                                : userType === 'doctor' ? '/doctorDashboard' 
+                                : '/adminDashboard';
+
+                navigate(redirectPath);
+                Swal.fire({ icon: 'success', title: 'Login Successful', text: 'Welcome!' });
+            } else {
+                Swal.fire({ icon: 'error', title: 'Login Error', text: 'Token not received' });
             }
-
-            navigate(redirectPath);
-
-            Swal.fire({
-                icon: 'success',
-                title: 'Login Successful',
-                text: 'You have successfully logged in.',
-            });
         } catch (error) {
             console.error("Login Error:", error.response?.data);
-            const errorMessage = error.response?.data?.message || 'An error occurred while logging in';
-
-            Swal.fire({
-                icon: 'error',
-                title: 'Login Error',
-                text: errorMessage,
-            });
+            Swal.fire({ icon: 'error', title: 'Login Error', text: 'Invalid credentials' });
         }
     };
 
