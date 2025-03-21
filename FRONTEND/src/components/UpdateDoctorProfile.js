@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import DoctorServiceMethods from '../service/DoctorServiceMethods';
 
 const UpdateDoctorProfile = () => {
-    const navigate = useNavigate(); //  For navigation
+    const navigate = useNavigate(); // ✅ For navigation
 
-    //  State using useState (instead of this.state)
+    // ✅ State using useState (instead of this.state)
     const [doctor, setDoctor] = useState({
         id: '',
         username: '',
@@ -26,7 +26,7 @@ const UpdateDoctorProfile = () => {
         message: null
     });
 
-    // Fetch doctor details when component mounts
+    // ✅ Fetch doctor details when component mounts
     useEffect(() => {
         loadDoctor();
     }, []);
@@ -53,7 +53,7 @@ const UpdateDoctorProfile = () => {
         DoctorServiceMethods.updateDoctorDetails(doctor.id, doctor)
             .then(() => {
                 alert('Doctor details updated successfully.');
-                navigate('/doctorDashboard'); //  Navigate to Dashboard after update
+                navigate('/doctorDashboard'); // ✅ Navigate to Dashboard after update
             })
             .catch(err => console.error("Error updating doctor data:", err));
     };

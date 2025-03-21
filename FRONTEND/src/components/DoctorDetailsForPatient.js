@@ -1,87 +1,79 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import AppointmentService from '../service/AppointmentService';
 
-class DoctorDetailsForPatient extends Component {
-    constructor(props) {
-        super(props)
+const DoctorDetailsForPatient = () => {
+    const [doctor, setDoctor] = useState({});
+    const [message, setMessage] = useState('');
 
-        this.state = {
-            doctor: [],
-            message: ''
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    useEffect(() => {
+        getDoctor();
+    }, []);
+
+    const getDoctor = () => {
+        if (!location.state?.appointmentId) {
+            alert("Appointment ID is missing!");
+            navigate(-1); // Go back to previous page
+            return;
         }
 
-        this.getDoctor = this.getDoctor.bind(this);
-    }
+        console.log("Fetching doctor details for appointment ID:", location.state.appointmentId);
 
-    componentDidMount() {
-        this.getDoctor();
-    }
-
-    getDoctor = () => {
-        console.log("Hello")
-        console.log(this.props.location.state.appointmentId);
-        AppointmentService.getDoctorByAppointmentId(this.props.location.state.appointmentId)
+        AppointmentService.getDoctorByAppointmentId(location.state.appointmentId)
             .then(response => {
-                console.log(response.data);
-                this.setState({
-                    doctor: response.data,
-                    message: "Doctor retrieved successfully"
-                });
+                console.log("Doctor Data:", response.data);
+                setDoctor(response.data);
+                setMessage("Doctor retrieved successfully");
             })
             .catch(error => {
-                console.error("in err ", error.response.data);
-                alert(error.response.data.message);
+                console.error("Error fetching doctor:", error.response?.data || error.message);
+                alert(error.response?.data?.message || "Something went wrong!");
             });
-    }
+    };
 
-    render() {
-        let { doctor } = this.state;
-        return (
-            <>
-                <div className="container my-4" >
-                <button className="btn btn-secondary my-3 offset-10" onClick={() => { this.props.history.goBack(); }}>Go Back</button>
-                    <h3 style={{ 'text-align': 'center' }}>Doctor Details</h3>
-                    <div style={{ 'margin-left': '300px' }}>
-                        <table className="table table-striped table-sm table-bordered" style={{ 'width': '700px', 'align': 'center' }}>
-                            <tbody>
-                                <tr>
-                                    <td> FirstName :</td>
-                                    <td>  {doctor.firstName}</td>
-                                </tr>
-                                <tr>
-                                    <td> LastName :</td>
-                                    <td>  {doctor.lastName}</td>
-                                </tr>
-                                <tr>
-                                    <td> Mobile No : </td>
-                                    <td>{doctor.mobileNumber}</td>
-                                </tr>
-                                <tr>
-                                    <td> Email :</td>
-                                    <td> {doctor.email}</td>
-                                </tr>
-                                <tr>
-                                    <td> State :</td>
-                                    <td>  {doctor.state}</td>
-                                </tr>
-                                <tr>
-                                    <td>  Area :</td>
-                                    <td> {doctor.area}</td>
-                                </tr>
-                                <tr>
-                                    <td>  City :</td>
-                                    <td> {doctor.city}</td>
-                                </tr>
+    return (
+        <div className="container my-4">
+            <button className="btn btn-secondary my-3 offset-10" onClick={() => navigate(-1)}>Go Back</button>
+            <h3 className="text-center">Doctor Details</h3>
+            <div className="d-flex justify-content-center">
+                <table className="table table-striped table-sm table-bordered w-50">
+                    <tbody>
+                        <tr>
+                            <td><b>First Name:</b></td>
+                            <td>{doctor.firstName}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Last Name:</b></td>
+                            <td>{doctor.lastName}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Mobile No:</b></td>
+                            <td>{doctor.mobileNumber}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Email:</b></td>
+                            <td>{doctor.email}</td>
+                        </tr>
+                        <tr>
+                            <td><b>State:</b></td>
+                            <td>{doctor.state}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Area:</b></td>
+                            <td>{doctor.area}</td>
+                        </tr>
+                        <tr>
+                            <td><b>City:</b></td>
+                            <td>{doctor.city}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    );
+};
 
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </>
-        )
-    }
-}
-
-export default DoctorDetailsForPatient
-
+export default DoctorDetailsForPatient;

@@ -22,7 +22,7 @@ const fetchAllDoctors = () => {
 const deleteDoctor = (doctorId) => {
   return axios.delete(`${ADMIN_API_BASE_URL}/removeDoctor/${doctorId}`);
 };
-
+ 
 // Fetch all patients by sending a GET request
 const fetchAllPatients = () => {
   return axios.get(`${ADMIN_API_BASE_URL}/getAllPatients`);
@@ -53,4 +53,3 @@ export default {
   saveDonor,
   fetchAllBloodDonors
 };
-

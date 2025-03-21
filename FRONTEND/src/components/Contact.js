@@ -1,108 +1,4 @@
-// // import React from 'react'
 
-// // const Contact = () => {
-// //     return (
-// //         <>
-// //             <div className="container">
-// //                 <h2 className="py-3 text-center">Contact</h2>
-// //                 <h3>
-// //                     Start working with us today. To get added as a doctor please email your details to any of the given admin below :
-// //                 </h3>
-// //                 <ul style={{color : "blue"}}>
-// //                     <li>
-// //                         <h4> 
-                                          
-// //                         </h4>
-// //                     </li>
-// //                     <li>
-// //                         <h4>
-                        
-// //                         </h4>
-// //                     </li>
-// //                 </ul>
-            
-                
-// //                 </div>
-// //         </>
-// //     )
-// // }
-
-// // export default Contact
-
-// import React from "react";
-// import { Container, Row, Col, Form, Button } from "react-bootstrap";
-// import "./ContactUs.css";
-// import img1 from "../assets/email.png"
-// function ContactUs() {
-//   return (
-//     <div>
-//       <main className="contact-us">
-//         <section className="contact-section">
-//           <Container>
-//             <Row>
-//               <Col md={6}>
-//                 <h2>Contact Us</h2>
-//                 <Form>
-//                   <Form.Group controlId="name">
-//                     <Form.Label>Your Name</Form.Label>
-//                     <Form.Control
-//                       type="text"
-//                       placeholder="Enter your name"
-                      
-//                     />
-//                   </Form.Group>
-//                   <Form.Group controlId="email">
-//                     <Form.Label>Email Address</Form.Label>
-//                     <Form.Control
-//                       type="email"
-//                       placeholder="Enter your email address"
-                      
-//                     />
-//                   </Form.Group>
-//                   <Form.Group controlId="message">
-//                     <Form.Label>Message</Form.Label>
-//                     <Form.Control
-//                     className="mb-3"
-//                       as="textarea"
-//                       rows={5}
-//                       placeholder="Enter your message"
-                      
-//                     />
-//                   </Form.Group>
-//                   <Button variant="primary" type="submit">
-//                     Send Message
-//                   </Button>
-//                 </Form>
-//               </Col>
-//               <Col md={6}>
-//                 <div className="contact-info">
-//                   <h3>Contact Information</h3>
-//                   <p>
-//                     <strong>Address:</strong>AIIMS Hospital Ansari Nagar East, Gautam Nagar, Ansari Nagar East, New Delhi, 110029
-//                     Code
-//                   </p>
-//                   <p>
-//                     <strong>Phone:</strong> +91 8007592194
-//                   </p>
-//                   <p>
-//                     <strong>Email:</strong> freelance_project@hospital.com
-//                   </p>
-//                   <p>
-//                     <img src={img1} className="img-fluid" />
-//                   </p>
-//                 </div>
-//               </Col>
-//             </Row>
-//           </Container>
-//         </section>
-//       </main>
-
-//       <footer>{/* Insert your footer code here */}</footer>
-//     </div>
-//   );
-// }
-
-// export default ContactUs;
 
 import React from "react";
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
@@ -195,13 +91,13 @@ function ContactUs() {
                 <div className="contact-info">
                   <h3>Contact Information</h3>
                   <p>
-                    <strong>Address:</strong> AIIMS Hospital Ansari Nagar East, Gautam Nagar, Ansari Nagar East, New Delhi, 110029 Code
+                    <strong>Address:</strong> E-Healthcare, 203, Anuda Chambers, Shaniwar Peth, near Gujar Hospital, Karad, Maharashtra 415110
                   </p>
                   <p>
                     <strong>Phone:</strong> +91 8007592194
                   </p>
                   <p>
-                    <strong>Email:</strong> freelance_project@hospital.com
+                    <strong>Email:</strong> E-healthcare@gmail.com
                   </p>
                   <p>
                     <img src={img1} className="img-fluid" alt="Email" />

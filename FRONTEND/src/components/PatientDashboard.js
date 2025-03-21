@@ -33,8 +33,6 @@ const PatientDashboard = () => {
         navigate('/');
     };
 
-   
-
     return (
         <div className="container">
             <div className="row my-3">
