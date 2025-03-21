@@ -1,0 +1,342 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\controllers\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\controllers\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\models\\ehealthcarecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\models\\ehealthcarecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\models\\doctortbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\models\\doctortbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\models\\doctortimetableholiday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\models\\doctortimetableholiday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\models\\doctortimetabletbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\models\\doctortimetabletbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\models\\patienttbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\models\\patienttbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\models\\appointmenttbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\models\\appointmenttbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\models\\admintbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\models\\admintbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\modelscopy\\entities\\doctorprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\modelscopy\\entities\\doctorprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\modelscopy\\entities\\patientprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\modelscopy\\entities\\patientprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\modelscopy\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\modelscopy\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\modelscopy\\kdacdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\modelscopy\\kdacdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\models\\doctortimetableavailableslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\models\\doctortimetableavailableslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\admin.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\admin.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|c:\\users\\admin\\desktop\\e-healthcare-app\\healthcare\\healthcare\\admin\\dto\\doctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CD8EADAC-DBCA-4680-AC9B-AD1069A9E54D}|Admin\\Admin.csproj|solutionrelative:admin\\dto\\doctordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EhealthcareContext.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\EhealthcareContext.cs",
+              "RelativeDocumentMoniker": "Admin\\Models\\EhealthcareContext.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\EhealthcareContext.cs",
+              "RelativeToolTip": "Admin\\Models\\EhealthcareContext.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAUwBcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T20:19:49.216Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Controllers\\Doctor.cs",
+              "RelativeDocumentMoniker": "Admin\\Controllers\\Doctor.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Controllers\\Doctor.cs*",
+              "RelativeToolTip": "Admin\\Controllers\\Doctor.cs*",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAmwCMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T08:47:34.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DoctorTimeTableHoliday.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\DoctorTimeTableHoliday.cs",
+              "RelativeDocumentMoniker": "Admin\\Models\\DoctorTimeTableHoliday.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\DoctorTimeTableHoliday.cs",
+              "RelativeToolTip": "Admin\\Models\\DoctorTimeTableHoliday.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T07:15:51.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DoctorTbl.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\DoctorTbl.cs",
+              "RelativeDocumentMoniker": "Admin\\Models\\DoctorTbl.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\DoctorTbl.cs",
+              "RelativeToolTip": "Admin\\Models\\DoctorTbl.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAcwCkAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T07:16:04.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\appsettings.json",
+              "RelativeDocumentMoniker": "Admin\\appsettings.json",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\appsettings.json",
+              "RelativeToolTip": "Admin\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-18T14:19:57.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DoctorTimetableTbl.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\DoctorTimetableTbl.cs",
+              "RelativeDocumentMoniker": "Admin\\Models\\DoctorTimetableTbl.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\DoctorTimetableTbl.cs",
+              "RelativeToolTip": "Admin\\Models\\DoctorTimetableTbl.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:23:33.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Program.cs",
+              "RelativeDocumentMoniker": "Admin\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Program.cs",
+              "RelativeToolTip": "Admin\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:15:53.57Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminTbl.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\AdminTbl.cs",
+              "RelativeDocumentMoniker": "Admin\\Models\\AdminTbl.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\AdminTbl.cs",
+              "RelativeToolTip": "Admin\\Models\\AdminTbl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:23:20.792Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DoctorProfile.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Modelscopy\\Entities\\DoctorProfile.cs",
+              "RelativeDocumentMoniker": "Admin\\Modelscopy\\Entities\\DoctorProfile.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Modelscopy\\Entities\\DoctorProfile.cs",
+              "RelativeToolTip": "Admin\\Modelscopy\\Entities\\DoctorProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:23:11.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PatientProfile.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Modelscopy\\Entities\\PatientProfile.cs",
+              "RelativeDocumentMoniker": "Admin\\Modelscopy\\Entities\\PatientProfile.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Modelscopy\\Entities\\PatientProfile.cs",
+              "RelativeToolTip": "Admin\\Modelscopy\\Entities\\PatientProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:23:07.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Admin\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\WeatherForecast.cs",
+              "RelativeToolTip": "Admin\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T20:16:35.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppointmentTbl.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\AppointmentTbl.cs",
+              "RelativeDocumentMoniker": "Admin\\Models\\AppointmentTbl.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\AppointmentTbl.cs",
+              "RelativeToolTip": "Admin\\Models\\AppointmentTbl.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:24:07.213Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Modelscopy\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Admin\\Modelscopy\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Modelscopy\\Entities\\User.cs",
+              "RelativeToolTip": "Admin\\Modelscopy\\Entities\\User.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:26:20.336Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PatientTbl.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\PatientTbl.cs",
+              "RelativeDocumentMoniker": "Admin\\Models\\PatientTbl.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\PatientTbl.cs",
+              "RelativeToolTip": "Admin\\Models\\PatientTbl.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwAUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-11T07:16:00.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "KDACDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Modelscopy\\KDACDBContext.cs",
+              "RelativeDocumentMoniker": "Admin\\Modelscopy\\KDACDBContext.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Modelscopy\\KDACDBContext.cs",
+              "RelativeToolTip": "Admin\\Modelscopy\\KDACDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:15:45.408Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Admin\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Admin\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-18T14:23:01.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DoctorTimeTableAvailableSlot.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\DoctorTimeTableAvailableSlot.cs",
+              "RelativeDocumentMoniker": "Admin\\Models\\DoctorTimeTableAvailableSlot.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Models\\DoctorTimeTableAvailableSlot.cs",
+              "RelativeToolTip": "Admin\\Models\\DoctorTimeTableAvailableSlot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:23:26.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Admin\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Admin\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T14:23:42.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Admin.http",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Admin.http",
+              "RelativeDocumentMoniker": "Admin\\Admin.http",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Admin.http",
+              "RelativeToolTip": "Admin\\Admin.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-02-18T14:15:51.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DoctorDto.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Dto\\DoctorDto.cs",
+              "RelativeDocumentMoniker": "Admin\\Dto\\DoctorDto.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\E-HealthCare-App\\Healthcare\\Healthcare\\Admin\\Dto\\DoctorDto.cs",
+              "RelativeToolTip": "Admin\\Dto\\DoctorDto.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T11:11:44.83Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
